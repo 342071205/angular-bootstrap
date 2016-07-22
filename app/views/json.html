@@ -1,0 +1,13 @@
+<h2>This is a json page, the data is from a json fire.</h2>
+<hr>
+<table ng-table="vm.tableParams" class="table" show-filter="true">
+    <tr ng-repeat="list in $data">
+        <td title="'Id'" filter="{ id: 'text'}" sortable="'id'">
+            {{list.id}}</td>
+        <td title="'Name'" filter="{ name: 'text'}" sortable="'name'">
+            {{list.name}}</td>
+        <td title="'Age'" filter="{ age: 'number'}" sortable="'age'">
+            {{list.age}}</td>
+        <td title="'action'" ></td>
+    </tr>
+</table>

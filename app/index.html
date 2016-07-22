@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN" ng-app="angu">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="../lib/ng-table/ng-table.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/angu.css">
+    <title>management framework with angular and bootstrap .</title>
+  </head>
+  <body class="angu">
+
+    <div class="angu-aside">
+      <h3 class="title">Welcome</h3>
+      <div class="list-group">
+        <a href="#home" class="list-group-item">Home</a>
+        <a href="#table" class="list-group-item">Table</a>
+        <a href="#manage" class="list-group-item">Manage</a>
+        <a href="#json" class="list-group-item">Json</a>
+        <a href="#http" class="list-group-item">Http</a>
+        <a href="#logout" class="list-group-item">Logout</a>
+      </div>
+    </div>
+
+    <div class="angu-main" ng-view></div>
+
+    <script type="text/javascript" src="../lib/angular/angular.js"></script>
+    <script type="text/javascript" src="../lib/angular/angular-route.min.js"></script>
+    <script type="text/javascript" src="../lib/ng-table/ng-table.min.js"></script>
+    <script type="text/javascript" src="../app/index.js"></script>
+    <script type="text/javascript" src="../app/service.js"></script>
+    <script type="text/javascript" src="../app/config.js"></script>
+    <script type="text/javascript" src="../app/controllers/home.js"></script>
+    <script type="text/javascript" src="../app/controllers/table.js"></script>
+    <script type="text/javascript" src="../app/controllers/manage.js"></script>
+    <script type="text/javascript" src="../app/controllers/json.js"></script>
+    <script type="text/javascript" src="../app/controllers/http.js"></script>
+    
+    <!--
+    <script type="text/javascript" src="./lib/restangular/1.5.1/restangular.min.js"></script>
+    
+    <script type="text/javascript" src="../static/js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="../static/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" src="../static/ueditor/ueditor.all.js"></script>-->
+  </body>
+</html>

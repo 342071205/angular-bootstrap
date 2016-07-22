@@ -1,0 +1,26 @@
+<h2>This is a manage page.</h2>
+<hr>
+<ul>
+<li>table list</li>
+<li>add</li>
+<li>edit</li>
+<li>remove</li>
+</ul>
+<hr>
+<div><a href="#/manage/add">add</a></div>
+<div>
+    <table ng-table="vm.tableParams" class="table" show-filter="true">
+        <tr ng-repeat="list in $data">
+            <td title="'Id'" filter="{ id: 'text'}" sortable="'id'">
+                {{list.id}}</td>
+            <td title="'Name'" filter="{ name: 'text'}" sortable="'name'">
+                {{list.name}}</td>
+            <td title="'Age'" filter="{ age: 'number'}" sortable="'age'">
+                {{list.age}}</td>
+            <td title="'action'" >
+                <a href="#/manage/edit/{{ list.id }}">编辑</a>
+                <a href="javascript:;" ng-click="vm.removeIt(list.id)">删除</a>
+            </td>
+        </tr>
+    </table>
+</div>
