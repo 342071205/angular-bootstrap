@@ -43,3 +43,8 @@ angular.module('angu.httpProvider', [], function($httpProvider) {
     return angular.isObject(data) && String(data) !== '[object File]' ? param(data) : data;
   }];
 });
+
+// angular.module('angu.loading', ['angular-loading-bar'])
+// .config(['cfpLoadingBarProvider', function(cfpLoadingBarProvider) {
+//   cfpLoadingBarProvider.spinnerTemplate = '<div><span class="fa fa-spinner">Loading...</div>';
+// }]);
